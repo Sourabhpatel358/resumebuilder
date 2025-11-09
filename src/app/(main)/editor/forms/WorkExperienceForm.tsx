@@ -220,11 +220,11 @@ function WorkExperienceItem({
             <FormItem>
               <FormLabel>Start date</FormLabel>
               <FormControl>
-                <Input
-                  {...field}
-                  type="date"
-                  value={field.value?.slice(0, 10)}
-                />
+              <Input
+  {...field}
+  type="date"
+  value={field.value ? field.value.slice(0, 10) : ""}
+/>
               </FormControl>
               <FormMessage />
             </FormItem>
